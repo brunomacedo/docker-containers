@@ -29,7 +29,7 @@ docker image build -t my-image .
 docker container run -p 8080:80 my-image
 ```
 
-- Inspect an especific config inside the `Dockerfile`.
+- Inspect a specific config inside the `Dockerfile`.
 Show the label author `Bruno Macedo <...>`.
 ```prompt
 docker image inspect --format="{{index .Config.Labels \"maintainer\"}}" my-image
