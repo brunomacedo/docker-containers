@@ -12,7 +12,7 @@ docker container run -d --name container1 alpine sleep 1000
 docker continer exec -it container1 ifconfig
 ```
 
-old docker versions
+- ...older docker versions
 ```prompt
 docker exec -it container1 ifconfig
 ```
