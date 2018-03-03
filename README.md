@@ -6,6 +6,7 @@
 
 - python from Dockerfile [view](python/README.md)
 
+- network container [view](network/README.md)
 
 ## Commands
 
