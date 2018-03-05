@@ -3,7 +3,7 @@ Run multiple containers with `docker-compose.yml`.
 
 ## Services
 
-- **Frontend:** React
+- **Frontend:** Nginx
 - **Backend:** Node
 - **DB:** MongoDB
 
