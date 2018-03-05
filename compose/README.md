@@ -26,12 +26,12 @@ Node runs by default on port 3000. Start the container with command that install
 
 ```yaml
 backend:
-    image: node
-    volumes:
-      - ./backend:/backend
-    ports:
-      - 3000:3000
-    command: bash -c "cd /backend && npm i && node app"
+  image: node
+  volumes:
+    - ./backend:/backend
+  ports:
+    - 3000:3000
+  command: bash -c "cd /backend && npm i && node app"
 ```
 
 ### Database
@@ -39,5 +39,5 @@ Just runs the mongo container.
 
 ```yaml
 database:
-    image: mongo
+  image: mongo
 ```
