@@ -17,7 +17,7 @@ docker container run -it -v /$(pwd):/app -p 3008:8000 --name python-container my
 docker container run -it --volumes-from=python-container debian cat log/http-server.log
 ```
 
-- Open container terminal
+- Open container terminal `bash`
 ```prompt
 docker container exec -it new_debian_container bash
 ```
