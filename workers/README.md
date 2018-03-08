@@ -1,7 +1,7 @@
 # Workers: 10 passsos para criar uma aplicação
 
 - [x] Iniciando a composição com o banco de dados
-- [ ] Usando volumes e scripts de banco de dados
+- [x] Usando volumes e scripts de banco de dados
 - [ ] Começando nossa camada de front-end
 - [ ] Aplicativo para enfileirar as mensagens
 - [ ] Configurando um proxy reverso
@@ -21,3 +21,8 @@ docker-compose exec database psql -U postgres -c '\l'
 ```
 
 ![List Postgres DB](screenshots/list-postgres.png)
+
+- Execute the file `-f` and list postegres
+```prompt
+docker-compose exec database psql -U postgres -f ./scripts/check.sql
+```
