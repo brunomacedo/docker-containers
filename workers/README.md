@@ -2,7 +2,7 @@
 
 - [x] Iniciando a composição com o banco de dados
 - [x] Usando volumes e scripts de banco de dados
-- [ ] Começando nossa camada de front-end
+- [x] Começando nossa camada de front-end
 - [ ] Aplicativo para enfileirar as mensagens
 - [ ] Configurando um proxy reverso
 - [ ] Redes, dependência e banco de dados
@@ -25,4 +25,9 @@ docker-compose exec database psql -U postgres -c '\l'
 - Execute the file `-f` and list postegres
 ```prompt
 docker-compose exec database psql -U postgres -f ./scripts/check.sql
+```
+
+- Show logs
+```prompt
+docker-compose logs -f -t
 ```
