@@ -3,7 +3,7 @@
 - [x] Iniciando a composição com o banco de dados
 - [x] Usando volumes e scripts de banco de dados
 - [x] Começando nossa camada de front-end
-- [ ] Aplicativo para enfileirar as mensagens
+- [x] Aplicativo para enfileirar as mensagens
 - [ ] Configurando um proxy reverso
 - [ ] Redes, dependência e banco de dados
 - [ ] Fila e workers
