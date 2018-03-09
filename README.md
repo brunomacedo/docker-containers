@@ -10,6 +10,12 @@
 
 - docker-compose example `Nginx` | `Node` | `MongoDB` | [view](compose/README.md)
 
+
+## Create services with reverse proxy
+
+- run docker [frontend, backend, postgres] [view](workers/README.md)
+
+
 ## Commands
 
 - Inspect a specific config inside the `Dockerfile`.
