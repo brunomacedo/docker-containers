@@ -18,7 +18,7 @@
 
 ## Apache Velocity and Ngnix
 
-- docker: html using velocity apache and server images with ngnix [view](velocity/README.md)
+- docker: html using apache velocity and server images with ngnix [view](velocity/README.md)
 
 ## Commands
 
