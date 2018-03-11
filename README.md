@@ -1,24 +1,24 @@
 # Docker Multiple Containers
 
-- nginx from command line [view](nginx-command/README.md)
+- nginx from command line [view](nginx-command)
 
-- nginx from Dockerfile [view](nginx/README.md)
+- nginx from Dockerfile [view](nginx)
 
-- python from Dockerfile [view](python/README.md)
+- python from Dockerfile [view](python)
 
-- network container [view](network/README.md)
+- network container [view](network)
 
-- docker-compose example `Nginx` | `Node` | `MongoDB` | [view](compose/README.md)
+- docker-compose example `Nginx` | `Node` | `MongoDB` | [view](compose)
 
 
 ## Create services with reverse proxy
 
-- run docker [frontend, backend, postgres] [view](workers/README.md)
+- run docker [frontend, backend, postgres] [view](workers)
 
 
 ## Apache Velocity and Ngnix
 
-- docker: html using apache velocity and server images with ngnix [view](velocity/README.md)
+- docker: html using apache velocity and server images with ngnix [view](velocity)
 
 ## Commands
 
