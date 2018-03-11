@@ -16,6 +16,10 @@
 - run docker [frontend, backend, postgres] [view](workers/README.md)
 
 
+## Apache Velocity and Ngnix
+
+- docker: html using velocity apache and server images with ngnix [view](velocity/README.md)
+
 ## Commands
 
 - Inspect a specific config inside the `Dockerfile`.
