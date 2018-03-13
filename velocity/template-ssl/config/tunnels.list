@@ -1,0 +1,16 @@
+searcher.montecarlo.babel.srv.intranet=view.comentarios.uol.com.br
+finance.intranet=cotacoes.economia.uol.com.br
+enquete.sys.srv.intranet=enquete.uol.com.br
+search.sys.srv.intranet=search.uol.com
+tagpage.sys.srv.intranet=tagpage.uol.com
+mais.busca.sys.srv.intranet=mais.busca.uol.com.br
+mais.sys.srv.intranet=mais.uol.com.br
+guiauol.searcher.guiauol.intranet=guiauol.searcher.uol.com.br
+guiauol.solr.intranet=guiauol.solr.intranet
+tagservice.intranet=tagservice.uol.com.br
+tabela.carros.intranet=tabela.carros.intranet
+api.mais.sys.intranet=api.mais.uol.com.br
+nginx.cotacoes.svc.cluster.development.kubernetes.intranet=nginx.cotacoes.svc.cluster.development.kubernetes.intranet
+nginx-fe.cotacoes.svc.cluster.development.kubernetes.intranet=nginx-fe.cotacoes.svc.cluster.development.kubernetes.intranet
+nginx.cotacoes.svc.cluster.production.kubernetes.intranet=nginx.cotacoes.svc.cluster.production.kubernetes.intranet
+api.cotacoes.sys.srv.intranet=api.cotacoes.sys.srv.intranet

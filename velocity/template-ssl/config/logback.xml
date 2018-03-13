@@ -1,0 +1,283 @@
+<configuration scan="true" debug="true">
+
+	<property name="LOGS_PATH" value="/export/logs/templatecache" />
+
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>INFO</level>
+	    </filter>
+		<file>${LOGS_PATH}/servlet.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/servlet-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+	
+	<appender name="RULES-REPLACE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>DEBUG</level>
+	    </filter>
+		<file>${LOGS_PATH}/rules-replace.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/rules-replace-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+	
+	<appender name="TEMPLATE-PROCESSS" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>TRACE</level>
+	    </filter>
+		<file>${LOGS_PATH}/template-process.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/template-process-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+	
+	<appender name="NOT-FOUND" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>TRACE</level>
+	    </filter>
+		<file>${LOGS_PATH}/notfound.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/notfound-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+	
+	
+	<appender name="TEMPLATE-PROCESSS-TIME" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>TRACE</level>
+	    </filter>
+		<file>${LOGS_PATH}/template-process-time.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/template-process-time-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+
+
+	<appender name="VELOCITY" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>WARN</level>
+	    </filter>
+		<file>${LOGS_PATH}/velocity.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/velocity-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+	
+	<appender name="LOADFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>DEBUG</level>
+	    </filter>
+		<file>${LOGS_PATH}/loadfile.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/loadfile-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+ 
+	<appender name="REQUEST" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>DEBUG</level>
+	    </filter>
+		<file>${LOGS_PATH}/requests.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/requests-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+ 
+	<appender name="OPEN" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>DEBUG</level>
+	    </filter>
+		<file>${LOGS_PATH}/open.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/open-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+ 
+  <appender name="PARAMETER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>INFO</level>
+	    </filter>
+		<file>${LOGS_PATH}/parameter.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/parameter-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+    
+  <appender name="COOKIE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>INFO</level>
+	    </filter>
+		<file>${LOGS_PATH}/cookie.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/cookie-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+   
+  <appender name="CACHE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>INFO</level>
+	    </filter>
+		<file>${LOGS_PATH}/cache.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/cache-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+ 
+<appender name="CACHECONTROL" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>DEBUG</level>
+	    </filter>
+		<file>${LOGS_PATH}/cache-control.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/cache-control-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+ 
+<appender name="USERAGENTS" class="ch.qos.logback.core.rolling.RollingFileAppender">
+	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>DEBUG</level>
+	    </filter>
+		<file>${LOGS_PATH}/useragents.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOGS_PATH}/useragents-%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		</rollingPolicy>
+		<encoder><pattern>%d [%level] [%thread] [%logger{0}] %msg%n</pattern></encoder>
+	</appender>
+ 
+ 
+ <appender name="ASYNC-FILE" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="FILE" />
+	</appender>
+	
+	 <appender name="ASYNC-TEMPLATE-PROCESSS" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="TEMPLATE-PROCESSS" />
+	</appender>
+	
+	 <appender name="ASYNC-TEMPLATE-PROCESSS-TIME" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="TEMPLATE-PROCESSS-TIME" />
+	</appender>
+	
+	
+ <appender name="ASYNC-CACHE" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="CACHE" />
+	</appender>
+	
+	 <appender name="ASYNC-REQUEST" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="REQUEST" />
+	</appender>
+	
+	 <appender name="ASYNC-OPEN" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="OPEN" />
+	</appender>
+	
+	 <appender name="ASYNC-VELOCITY" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="VELOCITY" />
+	</appender>
+	
+	 <appender name="ASYNC-LOADFILE" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="LOADFILE" />
+	</appender>
+	
+	 <appender name="ASYNC-NOT-FOUND" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="NOT-FOUND" />
+	</appender>
+	
+	
+	
+	<appender name="ASYNC-PARAMETER" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="PARAMETER" />
+	</appender>
+	
+	<appender name="ASYNC-USERAGENTS" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="USERAGENTS" />
+	</appender>
+	
+	<appender name="ASYNC-CACHECONTROL" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="CACHECONTROL" />
+	</appender>
+	
+	<appender name="ASYNC-COOKIE" class="ch.qos.logback.classic.AsyncAppender" queueSize="10000" discardingThreshold="10">
+		<appender-ref ref="COOKIE" />
+	</appender>
+	
+	
+	<appender name="ASYNC-RULES-REPLACE" class="ch.qos.logback.classic.AsyncAppender" queueSize="1000" discardingThreshold="10">
+		<appender-ref ref="RULES-REPLACE" />
+	</appender>
+	
+	
+	
+	<logger name="cache" level="INFO">
+		<appender-ref ref="ASYNC-CACHE" />
+	</logger>
+	
+	<logger name="request" level="DEBUG">
+		<appender-ref ref="ASYNC-REQUEST" />
+	</logger>
+	
+	<logger name="open" level="DEBUG">
+		<appender-ref ref="ASYNC-OPEN" />
+	</logger>
+
+	<logger name="velocity" level="WARN">
+		<appender-ref ref="ASYNC-VELOCITY" />
+	</logger>
+	    
+	    
+	 <logger name="loadfile" level="DEBUG">
+		<appender-ref ref="ASYNC-LOADFILE" />
+	</logger>
+	
+	 <logger name="cache-control" level="DEBUG">
+		<appender-ref ref="ASYNC-CACHECONTROL" />
+	</logger>
+
+     <logger name="parameter" level="INFO">
+		<appender-ref ref="ASYNC-PARAMETER" />
+	</logger>
+	
+      <logger name="user-agent" level="DEBUG">
+		<appender-ref ref="ASYNC-USERAGENTS" />
+	</logger>
+	
+	<logger name="cookie" level="INFO">
+		<appender-ref ref="ASYNC-COOKIE" />
+	</logger>
+	
+	<logger name="template-process" level="TRACE">
+		<appender-ref ref="ASYNC-TEMPLATE-PROCESSS" />
+	</logger>
+	
+	<logger name="notfound" level="DEBUG">
+		<appender-ref ref="ASYNC-NOT-FOUND" />
+	</logger>
+	
+	<logger name="rules-replace" level="DEBUG">
+		<appender-ref ref="ASYNC-RULES-REPLACE" />
+	</logger>
+
+	
+	<logger name="template-process-time" level="DEBUG">
+		<appender-ref ref="ASYNC-TEMPLATE-PROCESSS-TIME" />
+	</logger>
+	
+    <root level="INFO">
+		<appender-ref ref="ASYNC-FILE" />
+	</root>
+
+  
+  </configuration> 
