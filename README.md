@@ -27,3 +27,7 @@ Show the label author `Bruno Macedo <...>`.
 ```prompt
 docker image inspect --format="{{index .Config.Labels \"maintainer\"}}" my-image
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
