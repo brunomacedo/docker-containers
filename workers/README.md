@@ -5,7 +5,7 @@
 - [x] Começando nossa camada de front-end
 - [x] Aplicativo para enfileirar as mensagens
 - [x] Configurando um proxy reverso
-- [ ] Redes, dependência e banco de dados
+- [x] Redes, dependência e banco de dados
 - [ ] Fila e workers
 - [ ] Escalar é preciso...
 - [ ] 12 Factors
@@ -15,7 +15,12 @@
 
 ## Commands
 
-- Run commands inside the container with docker-compose
+- Show containers logs
+```prompt
+docker-compose logs -f -t
+```
+
+- Run commands inside the container with docker-compose `list databases`
 ```prompt
 docker-compose exec database psql -U postgres -c '\l'
 ```
@@ -27,9 +32,9 @@ docker-compose exec database psql -U postgres -c '\l'
 docker-compose exec database psql -U postgres -f ./scripts/check.sql
 ```
 
-- Show logs
+- Select database tables data on docker container
 ```prompt
-docker-compose logs -f -t
+docker-compose exec database psql -U postgres -d email_sender -c 'select * from emails'
 ```
 
 ### Are you trying to mount a directory onto a file (or vice-versa)?
