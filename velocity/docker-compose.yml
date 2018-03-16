@@ -1,19 +1,10 @@
 version: '3'
-volumes:
-  dados:
 services:
   frontend:
-    image: nginx:1.13
+    image: java
     volumes:
-      - ./images:/usr/share/nginx/html
+      - ./templatecache:/app
+    working_dir: /app
+    command: bash ./run.sh 80
     ports:
       - 80:80
-  app:
-    image: java:7
-    volumes:
-      - ./template-ssl:/app
-    working_dir: /app
-    command: bash ./run.sh 8080 8081
-    ports:
-      - 8080:8080
-      - 8081:8081
