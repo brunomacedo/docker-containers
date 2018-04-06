@@ -1,9 +1,0 @@
-version: '3'
-services:
-  backend:
-    image: node
-    volumes:
-      - ./app:/app
-    ports:
-      - 3000:3000
-    command: bash -c "cd /app && npm i && node app"
