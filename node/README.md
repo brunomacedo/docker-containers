@@ -12,7 +12,7 @@ docker container run -it -v /$(pwd):/app -p 3000:3000 --name my-node-container m
 
 - Open container terminal
 ```prompt
-docker container exec -it my-node-container bash
+docker container exec -it my-node-container sh
 ```
 
 - Remove container

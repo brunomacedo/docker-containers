@@ -19,5 +19,5 @@ docker container run -it --volumes-from=python-container debian cat log/http-ser
 
 - Open container terminal `bash`
 ```prompt
-docker container exec -it new_debian_container bash
+docker container exec -it new_debian_container sh
 ```
