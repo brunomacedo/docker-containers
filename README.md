@@ -34,6 +34,21 @@ Show the label author `Bruno Macedo <...>`.
 docker image inspect --format="{{index .Config.Labels \"maintainer\"}}" my-image
 ```
 
+
+## Best practices for writing Dockerfiles [follow](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+
+Just some reminders :
+
+    Run only one process in a container.
+    Never run a process as root in a container.
+    Never store data in a container, do it in a volume
+    Never store credentials in a container, do it in a volume
+    Keep your image up to date
+    Verify third-party container repositories
+    Use tool like docker-security-scanning
+    May the force be with you 🙏
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
