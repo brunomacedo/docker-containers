@@ -34,6 +34,21 @@ Show the label author `Bruno Macedo <...>`.
 docker image inspect --format="{{index .Config.Labels \"maintainer\"}}" my-image
 ```
 
+- Remove all containers
+```bash
+docker rm $(docker ps -a -f status=exited -q)
+```
+
+- Remove all images
+```bash
+docker image rm $(docker images -q)
+```
+
+- Remove all volumes
+```bash
+docker volume rm $(docker volume ls -q)
+```
+
 
 ## Best practices for writing Dockerfiles [follow](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
